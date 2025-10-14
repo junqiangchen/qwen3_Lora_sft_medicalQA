@@ -1,0 +1,4 @@
+peft
+datasets
+transformers
+pydantic
