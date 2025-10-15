@@ -21,7 +21,7 @@ The first step is to install pytorch, and then install the dependent libraries o
 * process jsonl format files as Hugging Face Dataset format and save it to disk for subsequent training and validation:run processjsonltotokenizeddata.py
 
 **3、Qwen3+Lora+SFT Training**
-* Set sft_config.yaml.The model is set up according to your own computer configuration,If you have 3090 graphics card, can choose Qwen3-7b Model.
+* Set sft_config.yaml.The model is set up according to your own computer configuration,If you have 3090 graphics card, can choose Qwen3-8b Model.
   
  model_name_or_path: "D:/3dlib/LLM/Qwen3-1.7B"
  
