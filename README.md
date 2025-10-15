@@ -22,9 +22,13 @@ The first step is to install pytorch, and then install the dependent libraries o
 
 **3、Qwen3+Lora+SFT Training**
 * Set sft_config.yaml.The model is set up according to your own computer configuration,If you have 3090 graphics card, can choose Qwen3-7b Model.
+  
  model_name_or_path: "D:/3dlib/LLM/Qwen3-1.7B"
+ 
  train_data_path: "D:/cjq/project/python/qwen3_Lora_sft_project/data/tokenized/train"
+ 
  eval_data_path: "D:/cjq/project/python/qwen3_Lora_sft_project/data/tokenized/eval"
+ 
  output_dir: "log/medicalQA_sft"
 
 * train model,Run the lorasfttrain function in the script of qwenloarsftinference.py 
