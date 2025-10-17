@@ -37,7 +37,7 @@ class LORASFTtrainModel(object):
             learning_rate=float(self.sft_cfg["learning_rate"]),
             logging_steps=int(self.sft_cfg["logging_steps"]),
             save_strategy=self.sft_cfg["save_strategy"],
-            report_to="none",
+            report_to=["tensorboard"],
         )
         trainer = Trainer(
             model=self.model,
@@ -79,3 +79,4 @@ class LORASFTinferenceModel(object):
         response = self.tokenizer.decode(outputs[0][inputs.shape[-1]:], skip_special_tokens=True)
         print("🩺 模型回复：", response)
         return response
+
