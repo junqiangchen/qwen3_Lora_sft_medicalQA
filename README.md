@@ -39,6 +39,7 @@ The first step is to install pytorch, and then install the dependent libraries o
 ## Result
 Trained Loss
 ![](loss.png)
+
 Inference Result
 ![](result.png)
 
